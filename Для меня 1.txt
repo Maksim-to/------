@@ -1,0 +1,897 @@
+index.html:
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Жемчуг</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Шапка сайта -->
+<table width="900" cellpadding="0" cellspacing="0" align="center" class="header">
+    <tr>
+        <td width="150" align="center">
+            <img src="title.png" alt="Логотип сайта" width="100">
+        </td>
+        <td align="center"><h1>Стоматологическая клиника "Жемчуг"</h1></td>
+        <td width="200">
+            <table cellpadding="5" width="100%">
+                <tbody>
+                    <tr>
+                        <td align="right">логин:</td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td align="right">пароль:</td>
+                        <td><input type="password" placeholder=""></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <a href="#" class="registration-button">регистрация</a>
+                            <input type="submit" value="войти" style="margin-left: -25px;">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- Меню навигации -->
+<table width="900" cellpadding="5" cellspacing="0" align="center" class="menu">
+    <tr>
+        <td align="center"><a href="#">раздел 1</a></td>
+        <td align="center"><a href="#">раздел 2</a></td>
+        <td align="center"><a href="#">раздел 3</a></td>
+        <td align="center"><a href="#">раздел 4</a></td>
+    </tr>
+</table>
+
+<!-- Белая полоса под меню -->
+<div class="white-strip"></div>
+
+<!-- Основное содержимое -->
+<table width="900" cellpadding="5" cellspacing="0" align="center">
+    <tr>
+        <!-- Боковое меню -->
+        <td width="150" valign="top" align="center" class="sidebar">
+            <a href="index.html">Главная</a><br>
+            <a href="about.html">О нас</a><br>
+            <a href="catalog.html">Каталог</a><br>
+            <a href="contacts.html">Контакты</a>
+        </td>
+
+        <!-- Центральный контент -->
+        <td width="500" valign="top" align="left" class="content">
+            <h1 align="center">Мы открылись!</h1>
+
+            <div class="content-container">
+                <img src="glavn_stranica.png" alt="Главное изображение" class="image-left">
+
+                <p class="first-paragraph">
+                    Сегодня 15.04.2025 открылась наша стоматологическая клиника по адресу г. Казань, ул. Карбышева, д. 3.
+                    Мы будем рады помочь вам не только облегчить зубную боль, но и провести косметические операции,
+                    ведь улыбка — неотъемлемая часть вашего имиджа!
+                </p>
+            </div>
+
+            <!-- Второй абзац, который не должен налезать на первый -->
+            <div class="text-below">
+                <p>
+                    Краткая сводка предоставляемых нами услуг, будет сформирована ниже в таблице.
+                    С подробной информацией вы можете ознакомиться на страницах соответствующих разделов.
+                </p>
+            </div>
+
+            <p align="center">Сводка предоставляемых услуг:</p>
+            <table border="3" cellpadding="20" cellspacing="5" class="info-table-narrow">
+                <tr>
+                    <td rowspan="2" align="center">Услуги</td>
+                    <td colspan="2" align="center">Характеристики услуги</td>
+                </tr>
+                <tr>
+                    <td align="center">Цена (руб.)</td>
+                    <td align="center">Длительность (мин.)</td>
+                </tr>
+                <tr>
+                    <td align="center">Лечение кариеса</td>
+                    <td align="center">5000</td>
+                    <td align="center">60</td>
+                </tr>
+                <tr>
+                    <td align="center">Профессиональная чистка зубов</td>
+                    <td align="center">3000</td>
+                    <td align="center">45</td>
+                </tr>
+                <tr>
+                    <td align="center">Отбеливание зубов</td>
+                    <td align="center">8000</td>
+                    <td align="center">90</td>
+                </tr>
+                <tr>
+                    <td align="center">Установка коронки</td>
+                    <td align="center">12000</td>
+                    <td align="center">120</td>
+                </tr>
+            </table>
+
+            <p align="center">Дополнительная информация о клинике:</p>
+            <table border="3" cellpadding="20" cellspacing="5" class="info-table-narrow">
+                <tr>
+                    <td colspan="2" align="center">Контакты горячей линии</td>
+                    <td align="center">Для жалоб и пожеланий</td>
+                    <td colspan="2" align="center">Контакты для записи</td>
+                </tr>
+                <tr>
+                    <td align="center">+44 55 33</td>
+                    <td align="center">zyb@clin.ru</td>
+                    <td align="center">cniga@clinika.ru</td>
+                    <td align="center">+78 87 07</td>
+                    <td align="center">zyb.ochered@clin.ru</td>
+                </tr>
+                <tr>
+                    <td colspan="5" align="center">Для нас важен каждый клиент!</td>
+                </tr>
+            </table>
+
+            <!-- Новые списки -->
+            <p align="center">Подсказка для клиентов о видах стоматологических процедур:</p>
+            <div style="margin-top: 10px; margin-left: 5px;">
+                <p><strong>Стоматологические процедуры:</strong></p>
+                <ul class="custom-list">
+                    <li>Лечение кариеса</li>
+                    <li>Удаление зубного камня</li>
+                    <li>Отбеливание зубов</li>
+                </ul>
+            </div>
+            <div style="margin-top: 10px; margin-left: 5px;">
+                <p><strong>Хирургические процедуры:</strong></p>
+                <ol class="custom-list">
+                    <li>Установка пломбы</li>
+                    <li>Удаление зуба</li>
+                    <li>Имплантация зубов</li>
+                </ol>
+            </div>
+            <div style="margin-top: 10px; margin-left: 5px;">
+                <p><strong>Классификация стоматологических процедур:</strong></p>
+                <ol class="custom-list" type="A">
+                    <li>Косметическая стоматология
+                        <ol type="a">
+                            <li>Виниры</li>
+                            <li>Люминиры</li>
+                        </ol>
+                    </li>
+                    <li>Хирургическая стоматология
+                        <ol type="a">
+                            <li>Удаление зубного камня</li>
+                            <li>Пластика десны</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </td>
+
+        <!-- Баннеры -->
+        <td width="100" valign="top" align="center" class="banner">
+            <a href="https://lavka.yandex.ru/good/zubnaya-pasta-aquafresh-formula-trojnoj-zashity-osvezhayushe-myatnaya-100-millilitre?utm_source=yandex&utm_medium=cpc&utm_campaign=%255BLVK%255DDT_LUA-goal_RU-CAP-MOS-MOW_NonBrand_dsa_restype-search_NU%7C112550608&utm_content=%7Cblockpremium%7Cpos2%7Cretargeting%7C52402492285%7Cad=1846097178209370515%7Cphrase%7C52402492285%7Cgbid%7C5466895020%7Cdevice%7Cdesktop%7Cregion%7C213%7Cregion_name%7C%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0&utm_term=---autotargeting%7C&yclid=7405418599329038335" class="banner-link">
+                <img src="banner1.png" alt="баннер1" width="80">
+                <p class="banner-caption">Для чувствительных зубов</p>
+            </a><br><br>
+
+            <a href="https://www.wildberries.ru/catalog/233976758/detail.aspx" class="banner-link">
+                <img src="banner2.png" alt="баннер2" width="80">
+                <p class="banner-caption">Для всей семьи</p>
+            </a><br><br>
+
+            <a href="https://www.wildberries.ru/catalog/401100787/detail.aspx" class="banner-link">
+                <img src="banner3.png" alt="баннер3" width="80">
+                <p class="banner-caption">Выбор миллионов россиян</p>
+            </a><br><br>
+        </td>
+    </tr>
+</table>
+
+<!-- Подвал -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <p><strong>Контакты:</strong></p>
+                <p>+78 87 07</p>
+                <p>zyb.ochered@clin.ru</p>
+                <p>г. Казань, ул. Карбышева, д. 3</p>
+            </div>
+            <div class="footer-column">
+                <p><strong>Ссылки:</strong></p>
+                <p><a href="index.html">Главная</a></p>
+                <p><a href="about.html">О нас</a></p>
+                <p><a href="contacts.html">Контакты</a></p>
+            </div>
+            <div class="footer-column">
+                <p><strong>Мы в соцсетях:</strong></p>
+                <p><a href="#">Telegram</a></p>
+                <p><a href="https://vk.com/gemchug_clinnic " target="_blank">ВКонтакте</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Стоматологическая клиника "Жемчуг". Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+about.html:
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>О нас - Стоматологическая клиника "Жемчуг"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Шапка сайта -->
+<table width="900" cellpadding="0" cellspacing="0" align="center" class="header">
+    <tr>
+        <td width="150" align="center">
+            <img src="title.png" alt="Логотип сайта" width="100">
+        </td>
+        <td align="center"><h1>Стоматологическая клиника "Жемчуг"</h1></td>
+        <td width="200">
+            <table cellpadding="5" width="100%">
+                <tbody>
+                    <tr>
+                        <td align="right">логин:</td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td align="right">пароль:</td>
+                        <td><input type="password" placeholder=""></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <a href="#" class="registration-button">регистрация</a>
+                            <input type="submit" value="войти" style="margin-left: -25px;">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- Меню навигации -->
+<table width="900" cellpadding="5" cellspacing="0" align="center" class="menu">
+    <tr>
+        <td align="center"><a href="#">раздел 1</a></td>
+        <td align="center"><a href="#">раздел 2</a></td>
+        <td align="center"><a href="#">раздел 3</a></td>
+        <td align="center"><a href="#">раздел 4</a></td>
+    </tr>
+</table>
+
+<!-- Белая полоса под меню -->
+<div class="white-strip"></div>
+
+<!-- Основное содержимое -->
+<table width="900" cellpadding="5" cellspacing="0" align="center">
+    <tr>
+        <!-- Боковое меню -->
+        <td width="150" valign="top" align="center" class="sidebar">
+            <a href="index.html">Главная</a><br>
+            <a href="about.html">О нас</a><br>
+            <a href="catalog.html">Каталог</a><br>
+            <a href="contacts.html">Контакты</a>
+        </td>
+
+        <!-- Центральный контент -->
+        <td width="500" valign="top" align="left" class="content">
+            <h1 align="center">О нас</h1>
+
+            <div class="content-container">
+                <img src="about_foto.png" alt="О нас" class="image-left">
+
+                <p class="wrapping-text">
+                    Стоматологическая клиника "Жемчуг" была основана в апреле 2025 года в городе Казани.
+                    Мы стремимся предоставлять высококачественные стоматологические услуги, сочетая современные технологии с индивидуальным подходом к каждому пациенту.
+                </p>
+            </div>
+
+            <div class="text-below">
+                <p>
+                    Наша команда состоит из опытных специалистов, которые постоянно повышают свою квалификацию,
+                    чтобы быть в курсе последних достижений в области стоматологии. Мы гордимся тем, что создали уютную и комфортную атмосферу для наших пациентов, где каждый чувствует себя как дома.
+                </p>
+
+                <p>
+                    Мы предлагаем широкий спектр услуг, включая терапевтическую, хирургическую и косметическую стоматологию.
+                    Наша цель — не только лечить зубы, но и помогать нашим пациентам обрести уверенную улыбку, которая станет их визитной карточкой.
+                </p>
+            </div>
+
+            <p align="center">Наши ценности:</p>
+            <ul class="custom-list">
+                <li>Индивидуальный подход к каждому пациенту.</li>
+                <li>Использование современного оборудования и материалов.</li>
+                <li>Создание комфортной и безопасной среды.</li>
+                <li>Прозрачность в ценообразовании и честное отношение к пациентам.</li>
+            </ul>
+
+            <p align="center">
+                Присоединяйтесь к нам, и мы поможем вам обрести здоровье и красоту вашей улыбки!
+            </p>
+        </td>
+
+        <!-- Баннеры -->
+        <td width="100" valign="top" align="center" class="banner">
+            <a href="https://lavka.yandex.ru/good/zubnaya-pasta-aquafresh-formula-trojnoj-zashity-osvezhayushe-myatnaya-100-millilitre?utm_source=yandex&utm_medium=cpc&utm_campaign=%255BLVK%255DDT_LUA-goal_RU-CAP-MOS-MOW_NonBrand_dsa_restype-search_NU%7C112550608&utm_content=%7Cblockpremium%7Cpos2%7Cretargeting%7C52402492285%7Cad=1846097178209370515%7Cphrase%7C52402492285%7Cgbid%7C5466895020%7Cdevice%7Cdesktop%7Cregion%7C213%7Cregion_name%7C%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0&utm_term=---autotargeting%7C&yclid=7405418599329038335" class="banner-link">
+                <img src="banner1.png" alt="баннер1" width="80">
+                <p class="banner-caption">Для чувствительных зубов</p>
+            </a><br><br>
+
+            <a href="https://www.wildberries.ru/catalog/233976758/detail.aspx" class="banner-link">
+                <img src="banner2.png" alt="баннер2" width="80">
+                <p class="banner-caption">Для всей семьи</p>
+            </a><br><br>
+
+            <a href="https://www.wildberries.ru/catalog/401100787/detail.aspx" class="banner-link">
+                <img src="banner3.png" alt="баннер3" width="80">
+                <p class="banner-caption">Выбор миллионов россиян</p>
+            </a><br><br>
+        </td>
+    </tr>
+</table>
+
+<!-- Подвал -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <p><strong>Контакты:</strong></p>
+                <p>+78 87 07</p>
+                <p>zyb.ochered@clin.ru</p>
+                <p>г. Казань, ул. Карбышева, д. 3</p>
+            </div>
+            <div class="footer-column">
+                <p><strong>Ссылки:</strong></p>
+                <p><a href="index.html">Главная</a></p>
+                <p><a href="about.html">О нас</a></p>
+                <p><a href="contacts.html">Контакты</a></p>
+            </div>
+            <div class="footer-column">
+                <p><strong>Мы в соцсетях:</strong></p>
+                <p><a href="#">Telegram</a></p>
+                <p><a href="https://vk.com/gemchug_clinnic " target="_blank">ВКонтакте</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Стоматологическая клиника "Жемчуг". Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+catalog.html:
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог - Стоматологическая клиника "Жемчуг"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Шапка сайта -->
+<table width="900" cellpadding="0" cellspacing="0" align="center" class="header">
+    <tr>
+        <td width="150" align="center">
+            <!-- Изображение логотипа -->
+            <img src="title.png" alt="Логотип сайта" width="100">
+        </td>
+        <td align="center"><h1>Стоматологическая клиника "Жемчуг"</h1></td>
+        <td width="200">
+            <!-- Блок для ввода логина и пароля -->
+            <table cellpadding="5" width="100%">
+                <tbody>
+                    <tr>
+                        <td align="right">логин:</td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td align="right">пароль:</td>
+                        <td><input type="password" placeholder=""></td>
+                    </tr>
+                </tbody>
+                <!-- Второй tbody для кнопок -->
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <!-- Кнопка "регистрация" -->
+                            <a href="#" class="registration-button">регистрация</a>
+                            <!-- Кнопка "войти" -->
+                            <input type="submit" value="войти" style="margin-left: -25px;">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- Меню навигации -->
+<table width="900" cellpadding="5" cellspacing="0" align="center" class="menu">
+    <tr>
+        <td align="center"><a href="#">раздел 1</a></td>
+        <td align="center"><a href="#">раздел 2</a></td>
+        <td align="center"><a href="#">раздел 3</a></td>
+        <td align="center"><a href="#">раздел 4</a></td>
+    </tr>
+</table>
+
+<!-- Белая полоса под меню -->
+<div class="white-strip"></div>
+
+<!-- Основное содержимое -->
+<table width="900" cellpadding="5" cellspacing="0" align="center">
+    <tr>
+        <!-- Боковое меню -->
+        <td width="150" valign="top" align="center" class="sidebar">
+            <a href="index.html">Главная</a><br>
+            <a href="about.html">О нас</a><br>
+            <a href="catalog.html">Каталог</a><br>
+            <a href="contacts.html">Контакты</a>
+        </td>
+        <!-- Центральный контент -->
+        <td width="500" valign="top" align="left" class="content">
+            <h1 align="center">Каталог услуг</h1>
+
+            <p align="center">Выберите интересующую вас услугу:</p>
+
+            <table align="center" width="100%" border="0" cellspacing="10">
+                <tr>
+                    <td align="center">
+                        <a href="product1.html" target="_blank">
+                            <img src="product1_thumb.jpg" alt="Лечение кариеса" width="150">
+                            <p>Лечение кариеса</p>
+                        </a>
+                    </td>
+                    <td align="center">
+                        <a href="product2.html" target="_blank">
+                            <img src="product2_thumb.jpg" alt="Профессиональная чистка зубов" width="150">
+                            <p>Чистка зубов</p>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <a href="product3.html" target="_blank">
+                            <img src="product3_thumb.jpg" alt="Отбеливание зубов" width="150">
+                            <p>Отбеливание зубов</p>
+                        </a>
+                    </td>
+                    <td align="center">
+                        <a href="product4.html" target="_blank">
+                            <img src="product4_thumb.jpg" alt="Установка коронки" width="150">
+                            <p>Установка коронки</p>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <a href="product5.html" target="_blank">
+                            <img src="product5_thumb.jpg" alt="Имплантация зуба" width="150">
+                            <p>Имплантация зуба</p>
+                        </a>
+                    </td>
+                    <td align="center">
+                        <a href="product6.html" target="_blank">
+                            <img src="product6_thumb.jpg" alt="Удаление зуба" width="150">
+                            <p>Удаление зуба</p>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <a href="product7.html" target="_blank">
+                            <img src="product7_thumb.jpg" alt="Лечение десен" width="150">
+                            <p>Лечение десен</p>
+                        </a>
+                    </td>
+                    <td align="center">
+                        <a href="product8.html" target="_blank">
+                            <img src="product8_thumb.jpg" alt="Виниры" width="150">
+                            <p>Виниры</p>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+        <!-- Баннеры -->
+        <td width="100" valign="top" align="center" class="banner">
+            <a href="https://lavka.yandex.ru/good/zubnaya-pasta-aquafresh-formula-trojnoj-zashity-osvezhayushe-myatnaya-100-millilitre?utm_source=yandex&utm_medium=cpc&utm_campaign=%255BLVK%255DDT_LUA-goal_RU-CAP-MOS-MOW_NonBrand_dsa_restype-search_NU%7C112550608&utm_content=%7Cblockpremium%7Cpos2%7Cretargeting%7C52402492285%7Cad=1846097178209370515%7Cphrase%7C52402492285%7Cgbid%7C5466895020%7Cdevice%7Cdesktop%7Cregion%7C213%7Cregion_name%7C%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0&utm_term=---autotargeting%7C&yclid=7405418599329038335" class="banner-link">
+                <img src="banner1.png" alt="баннер1" width="80">
+                <p class="banner-caption">Для чувствительных зубов</p>
+            </a><br><br>
+
+            <a href="https://www.wildberries.ru/catalog/233976758/detail.aspx" class="banner-link">
+                <img src="banner2.png" alt="баннер2" width="80">
+                <p class="banner-caption">Для всей семьи</p>
+            </a><br><br>
+
+            <a href="https://www.wildberries.ru/catalog/401100787/detail.aspx" class="banner-link">
+                <img src="banner3.png" alt="баннер3" width="80">
+                <p class="banner-caption">Выбор миллионов россиян</p>
+            </a><br><br>
+        </td>
+    </tr>
+</table>
+
+<!-- Подвал -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <p><strong>Контакты:</strong></p>
+                <p>+78 87 07</p>
+                <p>zyb.ochered@clin.ru</p>
+                <p>г. Казань, ул. Карбышева, д. 3</p>
+            </div>
+            <div class="footer-column">
+                <p><strong>Ссылки:</strong></p>
+                <p><a href="index.html">Главная</a></p>
+                <p><a href="about.html">О нас</a></p>
+                <p><a href="catalog.html">Каталог</a></p>
+                <p><a href="contacts.html">Контакты</a></p>
+            </div>
+            <div class="footer-column">
+                <p><strong>Мы в соцсетях:</strong></p>
+                <p><a href="#">Telegram</a></p>
+                <p><a href="https://vk.com/gemchug_clinnic " target="_blank">ВКонтакте</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Стоматологическая клиника "Жемчужина". Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+contacts.html:
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты - Стоматологическая клиника "Жемчуг"</title>
+    <!-- Подключение внешнего файла стилей -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Шапка сайта -->
+<table width="900" cellpadding="0" cellspacing="0" align="center" class="header">
+    <tr>
+        <td width="150" align="center">
+            <!-- Изображение логотипа -->
+            <img src="title.png" alt="Логотип сайта" width="100">
+        </td>
+        <td align="center"><h1>Стоматологическая клиника "Жемчуг"</h1></td>
+        <td width="200">
+            <!-- Блок для ввода логина и пароля -->
+            <table cellpadding="5" width="100%">
+                <tbody>
+                    <tr>
+                        <td align="right">логин:</td>
+                        <td><input type="text" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td align="right">пароль:</td>
+                        <td><input type="password" placeholder=""></td>
+                    </tr>
+                </tbody>
+                <!-- Второй tbody для кнопок -->
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <!-- Кнопка "регистрация" -->
+                            <a href="#" class="registration-button">регистрация</a>
+                            <!-- Кнопка "войти" -->
+                            <input type="submit" value="войти" style="margin-left: -25px;">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- Меню навигации -->
+<table width="900" cellpadding="5" cellspacing="0" align="center" class="menu">
+    <tr>
+        <td align="center"><a href="#">раздел 1</a></td>
+        <td align="center"><a href="#">раздел 2</a></td>
+        <td align="center"><a href="#">раздел 3</a></td>
+        <td align="center"><a href="#">раздел 4</a></td>
+    </tr>
+</table>
+<!-- Белая полоса под меню -->
+<div class="white-strip"></div>
+
+<!-- Основное содержимое -->
+<table width="900" cellpadding="5" cellspacing="0" align="center">
+    <tr>
+        <!-- Боковое меню -->
+        <td width="150" valign="top" align="center" class="sidebar">
+            <a href="index.html">Главная</a><br>
+            <a href="about.html">О нас</a><br>
+            <a href="catalog.html">Каталог</a><br>
+            <a href="contacts.html">Контакты</a>
+        </td>
+        <!-- Центральный контент -->
+        <td width="500" valign="top" align="left" class="content">
+            <h1 align="center">Напишите нам</h1>
+            <form action="#" method="post" style="margin: 20px;">
+                <label for="name">Имя:</label><br>
+                <input type="text" id="name" name="name" required style="width: 100%; margin-bottom: 10px;"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required style="width: 100%; margin-bottom: 10px;"><br>
+
+                <label for="subject">Тема:</label><br>
+                <input type="text" id="subject" name="subject" required style="width: 100%; margin-bottom: 10px;"><br>
+
+                <label for="message">Сообщение:</label><br>
+                <textarea id="message" name="message" rows="6" required style="width: 100%; margin-bottom: 10px;"></textarea><br>
+
+                <!-- Дополнительные поля по желанию -->
+                <label for="phone">Телефон:</label><br>
+                <input type="tel" id="phone" name="phone" style="width: 100%; margin-bottom: 10px;"><br>
+
+                <label for="preferred_contact">Предпочитаемый способ связи:</label><br>
+                <select id="preferred_contact" name="preferred_contact" style="width: 100%; margin-bottom: 10px;">
+                    <option value="email">Email</option>
+                    <option value="phone">Телефон</option>
+                </select><br>
+
+                <input type="submit" value="Отправить" style="margin-top: 10px;">
+            </form>
+
+            <h2 align="center">Адрес</h2>
+            <ul class="custom-list">
+                <li><strong>Телефон:</strong> +78 87 07</li>
+                <li><strong>Email:</strong> zyb.ochered@clin.ru</li>
+                <li><strong>Адрес:</strong> г. Казань, ул. Карбышева, д. 3</li>
+            </ul>
+
+            <!-- Карта Яндекс -->
+            <h2 align="center">Как нас найти</h2>
+            <div style="margin: 0 auto; width: 100%; max-width: 500px;">
+                <!-- Пример карты с Яндекс.Карт -->
+                <<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A43d6435d6db4f29ed62465724073d28421228171d195e3e8818d97da0e10eec1&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+            </div>
+        </td>
+        <!-- Баннеры -->
+        <td width="100" valign="top" align="center" class="banner">
+            <a href="https://lavka.yandex.ru/good/zubnaya-pasta-aquafresh-formula-trojnoj-zashity-osvezhayushe-myatnaya-100-millilitre?utm_source=yandex&utm_medium=cpc&utm_campaign=%255BLVK%255DDT_LUA-goal_RU-CAP-MOS-MOW_NonBrand_dsa_restype-search_NU%7C112550608&utm_content=%7Cblockpremium%7Cpos2%7Cretargeting%7C52402492285%7Cad=1846097178209370515%7Cphrase%7C52402492285%7Cgbid%7C5466895020%7Cdevice%7Cdesktop%7Cregion%7C213%7Cregion_name%7C%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0&utm_term=---autotargeting%7C&yclid=7405418599329038335" class="banner-link">
+                <img src="banner1.png" alt="баннер1" width="80">
+                <p class="banner-caption">Для чувствительных зубов</p>
+            </a><br><br>
+
+            <a href="https://www.wildberries.ru/catalog/233976758/detail.aspx" class="banner-link">
+                <img src="banner2.png" alt="баннер2" width="80">
+                <p class="banner-caption">Для всей семьи</p>
+            </a><br><br>
+
+            <a href="https://www.wildberries.ru/catalog/401100787/detail.aspx" class="banner-link">
+                <img src="banner3.png" alt="баннер3" width="80">
+                <p class="banner-caption">Выбор миллионов россиян</p>
+            </a><br><br>
+        </td>
+    </tr>
+</table>
+
+<!-- Подвал -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <p><strong>Контакты:</strong></p>
+                <p>+78 87 07</p>
+                <p>zyb.ochered@clin.ru</p>
+                <p>г. Казань, ул. Карбышева, д. 3</p>
+            </div>
+            <div class="footer-column">
+                <p><strong>Ссылки:</strong></p>
+                <p><a href="index.html">Главная</a></p>
+                <p><a href="about.html">О нас</a></p>
+                <p><a href="contacts.html">Контакты</a></p>
+            </div>
+            <div class="footer-column">
+                <p><strong>Мы в соцсетях:</strong></p>
+                <p><a href="#">Telegram</a></p>
+                <p><a href="https://vk.com/gemchug_clinnic " target="_blank">ВКонтакте</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Стоматологическая клиника "Жемчужина". Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+styles.css:
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+td, th {
+    padding: 5px;
+}
+
+.header {
+    background-color: #ff8000;
+}
+.menu {
+    background-color: #ffbb34;
+}
+.content {
+    background-color: white;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+.sidebar {
+    background-color: #ff8000;
+}
+.banner {
+    background-color: #ff8000;
+    width: 100px;
+}
+.white-strip {
+    width: 900px;
+    height: 25px;
+    background-color: white;
+    margin: 0 auto;
+}
+.registration-button {
+    position: relative;
+    left: -35px;
+}
+
+/* Изображение слева с обтеканием */
+.image-left {
+    float: left;
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px; /* Отступ слева */
+}
+
+/* Текст рядом с изображением */
+.first-paragraph {
+    text-align: justify;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Текст под изображением */
+.text-below {
+    clear: both;
+    margin-top: 1em;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Меню навигации */
+.menu td {
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+/* Контейнер с изображением и текстом */
+.content-container {
+    overflow: hidden;
+}
+
+/* Списки */
+.custom-list {
+    padding-left: 20px;
+    text-align: left;
+    margin: 0;
+}
+.custom-list li {
+    margin: 5px 0;
+}
+
+/* Подписи под баннерами */
+.banner-caption {
+    font-size: 10px;
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Ссылки баннеров */
+.banner-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    text-align: center;
+}
+
+/* Подвал */
+.footer {
+    background-color: #ff8000;
+    color: white;
+    font-size: 12px;
+    padding: 20px 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: centre;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Узкие таблицы */
+.info-table-narrow {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+}
+/* Первый абзац с обтеканием */
+.wrapping-text {
+    text-align: justify;
+    margin-bottom: 0;
+    padding-right: 10px; /* Отступ справа */
+}
